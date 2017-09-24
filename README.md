@@ -4,15 +4,13 @@ This is a very basic implementation of classic 8-puzzle problem. The whole progr
 is written in Java programming language. This implementation utilizes 2 of the very
 basic Approaches. These are,
 
-  *i. f(n) = g(n) + h(n); [Summation of length of the path from start node and heuristic values]*
+  **i. f(n) = g(n) + h(n); [Summation of length of the path from start node and heuristic values]**
 
-  *ii. By calculating total misplaced tiles*
+  **ii. By calculating total misplaced tiles**
 
 Initially the program is working as for the first approach. But the second approach is also
 implemented in the code which is commented out. If anyone is willing to utilize the second
 approach then they can follow the **Second Approach Steps** section instructions.
-
----
 
 # Basic Problem
 
@@ -29,8 +27,6 @@ position (left) to the goal position (right).
 
 initial                                                     goal
 ```
-
----
 
 ## First Approach Steps
 
@@ -78,8 +74,6 @@ final PriorityQueue <State> queue = new PriorityQueue<State>(100, new Comparator
 ```
 
 This priority queue will store the solution states as well as all the expanded states.
-
----
 
 ## Second Approach Steps
 
@@ -167,16 +161,12 @@ public int heuristic(int [] tiles){
 
 Everything is done. Now, good to go.
 
----
-
 ## Compilation
 
 Run `Launcher.java` from any IDE (which supports java).
 
 From **command prompt** or **power shell** write these codes: `javac *.java`
 and then `java Launcher`
-
----
 
 ## Analysis
 
@@ -189,8 +179,6 @@ In the end of the program a search analysis has been done which includes,
 For first approach, it takes less time to find the right solution and its path cost is no more than 26.
 
 For second approach, it takes more time than the first approach and also it generates more path cost.
-
----
 
 ## Drawbacks
 

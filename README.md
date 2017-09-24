@@ -1,10 +1,11 @@
-#8 Puzzle
+# 8 Puzzle
 
 This is a very basic implementation of classic 8-puzzle problem. The whole program
 is written in Java programming language. This implementation utilizes 2 of the very
 basic Approaches. These are,
 
   *i. f(n) = g(n) + h(n); [Summation of length of the path from start node and heuristic values]*
+
   *ii. By calculating total misplaced tiles*
 
 Initially the program is working as for the first approach. But the second approach is also
@@ -13,7 +14,7 @@ approach then they can follow the **Second Approach Steps** section instructions
 
 ---
 
-##Basic Problem
+# Basic Problem
 
 The 8-puzzle problem is a puzzle invented and popularized by Noyes Palmer Chapman in the 1870s. It is
 played on a 3-by-3 grid with 8 square blocks labeled 1 through 8 and a blank square. The goal is to
@@ -31,7 +32,7 @@ initial                                                     goal
 
 ---
 
-##First Approach Steps
+## First Approach Steps
 
 **Initially the program is working as for the first approach. So, no need to modify the code.**
 
@@ -80,7 +81,7 @@ This priority queue will store the solution states as well as all the expanded s
 
 ---
 
-##Second Approach Steps
+## Second Approach Steps
 
 To experience the second approach we need to modify some lines of codes. First, in `Solver.java`
 implement the code given below for the priority queue (which is currently commented out in the code)
@@ -168,7 +169,7 @@ Everything is done. Now, good to go.
 
 ---
 
-##Compilation
+## Compilation
 
 Run `Launcher.java` from any IDE (which supports java).
 
@@ -177,7 +178,7 @@ and then `java Launcher`
 
 ---
 
-##Analysis
+## Analysis
 
 In the end of the program a search analysis has been done which includes,
 
@@ -191,7 +192,7 @@ For second approach, it takes more time than the first approach and also it gene
 
 ---
 
-##Drawbacks
+## Drawbacks
 
 As the program generates random numbers to form the initial state, therefore most of the cases
 it does not find any solution for that specific state.

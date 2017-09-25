@@ -118,11 +118,17 @@ final PriorityQueue <State> queue = new PriorityQueue<State>(100, new Comparator
 ---
 
 Secondly, in `State.java` comment out these lines:
+
 Line 8: `public int g;`
+
 Line 9: `public int h;`
+
 Line 22: `g = 0;`
+
 Line 23: `h = heuristic(tiles);`
+
 Line 40: `g = previousState.g + 1;`
+
 Line 41: `h = heuristic(tiles);`
 
 Now comment out these 3 methods given below:
